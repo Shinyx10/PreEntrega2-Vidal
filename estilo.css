@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(146, 51, 184);
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-shadow: 0 0 5px #000;
+}
+
+.logo{
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-name: fade;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+main{
+    background-image: url(/multi/transparente.png);
+    height: 100vh;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+
+body{
+    background-color: blueviolet;
+}
+
+.intro{
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid black;
+    border-radius: 5px;
+    float: right;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.intro p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: white;
+}
+.galeria{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+    margin: 1rem;
+}
+
+.barra ul{
+    list-style: none;
+}
+
+.barra ul li{
+    display: inline-block;
+}
+
+.barra a:hover{
+    color: #222;
+    text-decoration: underline;
+}
+
+.imagenes{
+    margin: 1rem;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;    
+}
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row2{
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.img1{    
+    background-size: cover;
+    background-position: center;
+}
+.img1:hover{
+    transform: scale(1.05);
+    transition: all;    
+}
+
+.img2{
+    background-size: cover;
+    background-position: center;
+}
+.img2:hover{
+    transform: scale(1.05);
+    transition: all;    
+}
+
+.img3{    
+    background-size: cover;
+    background-position: center;
+}
+.img3:hover{
+    transform: scale(1.05);
+    transition: all;    
+}
+
+.img4{    
+    background-size: cover;
+    background-position: center;
+}
+.img4:hover{
+    transform: scale(1.05);
+    transition: all;    
+}
+
+footer{
+    background-color: rgb(146, 51, 184);
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    font-size: 18px;
+}
+footer .redes{
+    margin-top: 15px;
+}
+footer i{
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 5px black;
+    letter-spacing: 10px;
+}
+
+@media only screen and (min-width:480px)and (max-width:767px){
+    .intro{
+        display: flex;
+    }
+    h1{
+        font-size: 20px;
+        padding: 10px;
+        margin-right: 5px;
+    }  
+   
+    .galeria h1{
+        font-size: 30px;
+    }
+    .imagenes{
+        margin: 1rem;
+        width: 100%;      
+        padding-left: 5px;
+        margin-right: auto;
+        margin-left: auto;    
+    }
+}
+@media only screen and (min-width: 768px)and (max-width:1023px){
+    .intro{
+        display: flex;
+    }
+    h1{
+        font-size: 20px;
+        padding: 10px;
+        margin-right: 5px;
+    } 
+}
